@@ -1,5 +1,4 @@
-body {
-    margin: 5px;
+body { 
     /* border: solid 5px; */
     /* border-color: black; */
     background-color: rgb(66, 0, 173);
@@ -7,42 +6,223 @@ body {
     grid-template-columns: 200px, auto, auto;
     grid-template-rows: auto, auto, auto;
 }
-#general01 {
-    margin: 5px;
+#general01 { 
     border: solid 5px;
-    border-color: black;
+    /* border-color: black; */
     background-color: rgb(15, 58, 114);
-    height: 300px;
-    width: auto;
+    height: 60%;
+    width: 100%;
     grid-row: 1;
     grid-column: span 3;
 
 }
+div.carrousel{
+    height: 100%;
+    width: auto;
+    max-width: 120em;
+}
+.carrousel .content{
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.carrousel .puntos{
+    width: 100%;
+    padding: -1em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrousel .punto{
+    width: 1em;
+    height: 1em;
+    /* background-color: #fff; */
+    margin-left: 1em;
+}
+
+.content {
+    height: 100%;
+}
+#banner01{
+    height: 100%;
+    width: 60%;
+    margin: 2px;
+}
+#banner02{
+    height: 100%;
+    width: 35%;
+    margin: 2px;
+}
 #general02 {
-    margin: 5px;
-    border: solid 5px;
-    border-color: black;
+    /* border-color: black; */
     background-color: rgb(0, 78, 129);
-    height: 1215px;
-    width: 1710px;
+    height: 100%;
+    width: 100%;
     grid-row: 2 / span 2;
     grid-column: 2 / span 2;
 }
-#general03 {
-    margin: 5px;
-    border: solid 5px;
-    border-color: black;
-    background-color: rgb(48, 12, 133);
-    height: 1215px;
-    width: 200px;
-    grid-row: 3/span 1;
+.cellF_1 img, .cellS_1 img, .cellT_1 img{
+    width: 100px;
+    height: 110px;
 }
-#general04 {
-    margin: 5px;
-    border: solid 5px;
-    border-color: black;
+#general03 {
+    /* border: solid 5px; */
+    /* border-color: black; */
+    background-color: rgb(48, 12, 133);
+    height: 100em;
+    width: 100%;
+    grid-row: 3/span 1;
+    /* justify-content: space-around; */
+    position: initial;
+}
+#general04 { 
+    border: solid 1px;
+    /* border-color: black; */
     background-color: rgba(56, 65, 197, 0.822);
-    height: 100px;
+    height: 4000%;
     width: auto;
     grid-column: span 3;
+}
+
+form{
+    margin: 0 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    justify-content: space-around;
+}
+form .nameLbl,
+input,
+textarea,
+select,
+div .genero {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+p {
+  font-size: 12px;
+  width: 150px;
+  display: inline-block;
+  margin-left: 18px;
+}
+h1 {
+  font-size: 32px;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+.mainRegister {
+    margin: 40px 70px;
+    width: 40%; 
+    height: 30%; 
+    -webkit-border-radius: 8px/7px; 
+    -moz-border-radius: 8px/7px; 
+    border-radius: 8px/7px; 
+    background-color: #9331e2; 
+    -webkit-box-shadow: 1px 2px 5px rgba(221, 197, 197, 0.31); 
+    -moz-box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
+    box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
+    border: solid 1px #5c05ce;
+  }
+  
+input[type=text],input[type=password] {
+  width: 200px; 
+  height: 40px; 
+  -webkit-border-radius: 0px 4px 4px 0px/5px 5px 4px 4px; 
+  -moz-border-radius: 0px 4px 4px 0px/0px 0px 4px 4px; 
+  border-radius: 0px 4px 4px 0px/5px 5px 4px 4px; 
+  background-color: #fff; 
+  -webkit-box-shadow: 1px 2px 5px rgba(0,0,0,.09); 
+  -moz-box-shadow: 1px 2px 5px rgba(0,0,0,.09); 
+  box-shadow: 1px 2px 5px rgba(0,0,0,.09); 
+  border: solid 1px #cbc9c9;
+  margin-left: 30px;
+  margin-top: 10px; 
+  padding-left: 30px;
+  }
+input[type=password] {
+  margin-bottom: 25px;
+  }
+  .genero {
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  
+  a.button {
+    font-size: 26px;
+    font-weight: 600;
+    text-align: start;
+    color: white;
+    padding: 0px 0px 0px 180px;
+    margin: 0px;
+    display: flex;
+    text-decoration: none;
+    width: 40%; height: 100%; 
+    -webkit-border-radius: 5px; 
+    -moz-border-radius: 5px; 
+    border-radius: 5px; 
+    background-color: #3a57af; 
+    -webkit-box-shadow: 0 3px rgba(58,87,175,.75); 
+    -moz-box-shadow: 0 3px rgba(58,87,175,.75); 
+    box-shadow: 0 3px rgba(58,87,175,.75);
+    transition: all 0.1s linear 0s; 
+    top: 0px;
+    position: relative;
+  }
+  
+  a.button:hover {
+    top: 3px;
+    background-color:#2e458b;
+    -webkit-box-shadow: none; 
+    -moz-box-shadow: none; 
+    box-shadow: none;
+    
+  }
+  a p {
+    font-size: 12px;
+    width: 150px;
+    display: inline-block;
+    margin-left: -50px
+  }
+div#tabla01 {
+    margin: 100px;
+    padding: 0px;
+    width: auto; height: 30%;
+    border: solid 1px;
+    border-color: rgba(45, 11, 139, 0.329);
+    background-color: rgb(161, 127, 255);
+}
+th.init{
+    background-color: rgb(162, 0, 255);
+    text-align: center;
+}
+div.textoTitulo{
+    margin: 0px auto;
+}
+table#gameRank{
+    width: 100%; height: auto;
+    border-spacing: 10px;
+    padding: 3px;
+    border: solid 2px;
+
+}
+
+tr.firstR{
+    background-color: rgb(242, 0, 0);
+    
+}
+tr.secondR{
+    background-color: rgb(70, 43, 226);
+}
+tr.thirdR{
+    background-color:rgb(0, 81, 255);
+}
+td.cellF_1{
+    
 }
